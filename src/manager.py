@@ -34,7 +34,7 @@ class FileManager(RequestManager, FileHandler):
         logger.info(f"Request : {request}")
 
     def __enter__(self) -> Type[RequestManager]:
-        logger.info(f"Entered : {self.__classsname__}")
+        logger.info(f"Entered : {self.__class__.__name__}")
         return self
 
     def __exit__(self, *args, **kwargs):
