@@ -49,3 +49,7 @@ class FileHandler(AbstractHandler):
     def handle(self, request: Request, **kwargs):
         ...
 
+
+def make_file(mode="r", buffering=None, encoding=None, errors=None, new_line=None):
+    ...
+
